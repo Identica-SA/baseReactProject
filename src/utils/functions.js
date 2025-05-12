@@ -1,3 +1,26 @@
+function isArray(arr) {
+	return arr instanceof Array;
+}
+
+const QueryBuilder = (urlParams) => {
+	if (urlParams)
+		return Object.entries(urlParams)
+			.map(([key, value]) => {
+				let finalValue = value;
+				if (isArray(value)) {
+					finalValue = value.join(",");
+				}
+				return `${encodeURIComponent(key)}=${encodeURIComponent(
+					finalValue
+				)}`;
+			})
+			.join("&");
+	else return "";
+};
+
+const URLAppender = (baseurl, queryString) =>
+	queryString ? `${baseurl}?${queryString}` : baseurl;
+
 /**
  * Constructs a complete URL by appending query parameters to a base URL.
  * Handles both string and object parameters (converts objects to query strings).
