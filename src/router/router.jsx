@@ -12,12 +12,10 @@ const Router = () => {
 		setCurrentSession(null);
 	}, [setCurrentSession]);
 
-	return (
-		<>
-			<Routes>
-				<Route path="/" element={<Landing />} />
-			</Routes>
-		</>
+	return (		
+		<Routes>
+			<Route path="/" element={<Landing />} />
+		</Routes>		
 	);
 };
 
