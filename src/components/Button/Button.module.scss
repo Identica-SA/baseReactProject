@@ -1,0 +1,22 @@
+@use "../../theme/variables" as pal;
+
+.buttonContainer {
+	display: block;
+	width: 100%;
+	height: 48px;
+
+	background-color: pal.$color-primary-main;
+	border: none;
+	border-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all ease 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: pal.$color-primary-light;
+		transition: all ease 0.3s;
+	}
+}

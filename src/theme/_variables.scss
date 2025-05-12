@@ -1,0 +1,56 @@
+$color-common-white: #f8f9fa;
+$color-common-black: #2b2b2b;
+
+$color-primary-main: #6b46c1;
+$color-primary-light: #8867d3;
+$color-primary-lighter: #ad94e5;
+$color-primary-dark: #5229b2;
+$color-primary-darker: #391293;
+
+$color-secondary-main: #ffe54a;
+$color-secondary-light: #ffea6d;
+$color-secondary-lighter: #fff098;
+$color-secondary-dark: #efd11f;
+$color-secondary-darker: #bca20b;
+
+$color-text-primary: #2b2b2b;
+$color-text-secondary: #616161;
+$color-text-disabled: #616161;
+$color-text-main: #004152;
+$color-text-light: #1d9a91;
+$color-text-accentMain: #7523a8;
+$color-text-accentLight: #8d45b9;
+
+$color-success-main: #187b22;
+$color-success-light: #2a9635;
+$color-success-contrastText: #f8f9fa;
+
+$color-info-main: #416cbe;
+$color-info-contrastText: #f8f9fa;
+
+$color-error-main: #cc3e36d4;
+$color-error-light: #e6635cd4;
+$color-error-contrastText: #f8f9fa;
+
+$color-grey-0: #ffffff;
+$color-grey-25: #fcfdfe;
+$color-grey-50: #f5f7fa;
+$color-grey-100: #f2f2f2;
+$color-grey-150: #edf4ff;
+$color-grey-200: #e1e1e1;
+$color-grey-250: #d9d9d9;
+$color-grey-300: #acacac;
+$color-grey-400: #757575;
+$color-grey-600: #616161;
+$color-grey-700: #444444;
+$color-grey-800: #2b2b2b;
+
+$color-gray-main: #e1e1e1;
+$color-gray-light: #f1f1f1;
+$color-gray-contrastText: #aca6a6;
+
+$color-divider: #aca6a6;
+
+@function add-opacity($color, $opacity) {
+	@return rgba($color, $opacity);
+}

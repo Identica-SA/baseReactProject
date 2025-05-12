@@ -1,0 +1,24 @@
+@use "../../theme/variables" as pal;
+
+.checkboxContainer {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	margin-top: 5px;
+
+	p {
+		display: block;
+		margin-top: 0;
+	}
+
+	input {
+		display: block;
+		height: 18px;
+		width: 18px;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"] {
+		accent-color: pal.$color-primary-main;
+	}
+}
